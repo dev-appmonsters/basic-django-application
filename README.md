@@ -27,3 +27,36 @@
 ```
 pip install -r requirements.txt
 ```
+
+
+### Configure the settings:
+
+1. Edit `app/conf/development/settings.py` if you want to develop the project.
+
+2. Edit `app/conf/production/settings.py` if you want to run the project in production.
+
+### Apply migrations
+
+```
+python manage.py migrate
+```
+
+### Collect static files (only on a production server)
+
+```
+python manage.py collectstatic
+```
+
+### Running
+
+#### A development server
+
+```
+python manage.py runserver
+```
+
+### Linting:
+
+```
+make lint
+```
